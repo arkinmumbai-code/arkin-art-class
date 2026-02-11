@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arkin Art Class | Learn Art for Kids & Adults</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: #fdf7fb;
+      color: #444;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #f9c5d1, #fce1a8, #c7e6d7);
+      padding: 50px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: "🎨 ✨ 🖍️";
+      display: block;
+      margin-top: 12px;
+      font-size: 24px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+
+    header img {
+      max-width: 180px;
+      margin-bottom: 15px;
+      animation: popIn 1s ease;
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 38px;
+      color: #3b3b3b;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      color: #6b5b95;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      text-align: center;
+      animation: fadeUp 1.2s ease;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      margin-top: 45px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 30px 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 18px 35px rgba(0,0,0,0.1);
+    }
+
+    .card::before {
+      content: "🌈";
+      position: absolute;
+      top: -14px;
+      right: 20px;
+      font-size: 28px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #f28ab2;
+      font-size: 22px;
+    }
+
+    .kids-theme {
+      background: #eef9ff;
+      border-radius: 30px;
+      padding: 25px;
+    }
+
+    .adults-theme {
+      background: #fff1f6;
+      border-radius: 30px;
+      padding: 25px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #ff8fab;
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin-bottom: 10px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #cdb4db, #ffc8dd, #bde0fe);
+      text-align: center;
+      padding: 70px 20px;
+      border-radius: 40px 40px 0 0;
+      animation: fadeUp 1.2s ease;
+    }
+
+    .cta button {
+      background: #ff8fab;
+      border: none;
+      color: #fff;
+      padding: 16px 36px;
+      font-size: 17px;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .cta button:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+      background: #faf4fb;
+    }
+  
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: #fff;
+      border-radius: 50px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      text-decoration: none;
+      z-index: 999;
+      animation: pulse 2s infinite;
+    }
+
+    .whatsapp-float span {
+      font-weight: 500;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Arkin Art Class Logo" />
+  <h1>Arkin Art Class</h1>
+  <p>A gentle, joyful space to create, play and relax through art</p>
+</header>
+
+<section class="intro">
+  <h2>Welcome to Arkin</h2>
+  <p>Children explore creativity with joy while adults rediscover art as a calming escape.</p>
+</section>
+
+<section>
+  <h2>🖍️ Little Artists in Action</h2>
+  <p style="text-align:center; max-width:700px; margin:0 auto 30px;">A glimpse of our joyful art sessions where little hands explore big creativity.</p>
+  <div style="display:flex; justify-content:center;">
+    <img src="kids-art.jpg" alt="Kids enjoying art class at Arkin" style="max-width:90%; border-radius:30px; box-shadow:0 15px 30px rgba(0,0,0,0.12);" />
+  </div>
+</section>
+
+<section>
+  <h2>🎨 New Weekday Evening Batch</h2>
+  <div class="courses kids-theme">
+    <div class="card">
+      <span class="badge">New Batch</span>
+      <h3>✨ Wednesday Creative Batch (Kids)</h3>
+      <p><strong>Ages 4–12 years</strong></p>
+      <p>04:30 PM – 06:30 PM | ₹1200 (4 sessions)</p>
+      <p>Perfect after-school creative time for kids</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🎨 New Weekend Adult Batch</h2>
+  <div class="courses adults-theme">
+    <div class="card">
+      <span class="badge">Limited Seats</span>
+      <h3>🌟 Weekend Creative Journey</h3>
+      <p>Sat: 4:30–6:30 | Sun: 2:00–4:00</p>
+      <p>₹2200 (4 sessions) | ₹3500 (8 sessions)</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>📍 Our Locations</h2>
+  <div class="courses adults-theme">
+    <div class="card">
+      <h3>Lokhandwala</h3>
+      <p>1402, Versova Sky Lark Tower</p>
+      <p>Near Lokhandwala Circle, Andheri West</p>
+      <p>📞 9821477550</p>
+    </div>
+    <div class="card">
+      <h3>Andheri</h3>
+      <p>602, Center Square</p>
+      <p>Opp. Nadco Shopping Center, S.V. Road</p>
+      <p>Andheri (W) – 400058</p>
+      <p>📞 9821477550</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Join the Arkin Art Family</h2>
+  <p>Art for kids, adults & peaceful minds</p>
+  <p style="font-size:18px; margin:20px 0;">📞 Call <strong><a href="tel:9821477550" style="color:#3b3b3b; text-decoration:none;">9821477550</a></strong> for admission and more details</p>
+  <button onclick="window.location.href='tel:9821477550'">Call Now</button>
+</section>
+
+<footer>
+  📞 Call 9821477550 for admission and more details<br/>
+  © 2026 Arkin Art Class | Mumbai
+</footer>
+
+
+<a href="https://wa.me/919821477550" target="_blank" class="whatsapp-float">
+  💬 <span>WhatsApp Us</span>
+</a>
+
+</body>
+</html>
